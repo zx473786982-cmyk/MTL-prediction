@@ -67,7 +67,7 @@ class IFPNetwork(nn.Module):
 # ============================================================================
 
 SEEDS = [20, 52, 111, 340, 888]
-ARTIFACT_DIR = os.path.join(os.path.dirname(__file__), "ensemble_artifacts")
+ARTIFACT_DIR = os.path.dirname(os.path.abspath(__file__))
 
 CONTINUOUS_FEATURES = [
     'pH', 'IMC(%)', 'Zeta(mV)', 'EC(ms/cm)', 'VS/TS(%)',
